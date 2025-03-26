@@ -17,7 +17,7 @@ void main() async {
     await Firebase.initializeApp();
     runApp(const MyApp()); // Launch the app when Firebase is initialized
   } catch (error) {
-    print("Error initializing Firebase: ${error.toString()}");
+    print("Error initializing the Firebase: ${error.toString()}");
     // Show an error screen in case of Firebase initialization failure
     runApp(const FirebaseErrorApp());
   }
